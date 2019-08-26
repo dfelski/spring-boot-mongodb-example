@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+}
